@@ -1,3 +1,10 @@
 deploy:
   override:
     - for i in {0..100} ; do echo $i ; sleep 2; done
+    
+
+tasks:
+  restart:
+    description: Restart app servers
+    steps:
+      - cap $ENVIRONMENT deploy:restart
