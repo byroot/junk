@@ -1,3 +1,4 @@
 deploy:
   override:
     - for i in {0..100} ; do echo $i ; sleep 2; done
+    - hello world
