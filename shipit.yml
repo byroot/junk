@@ -1,4 +1,15 @@
+review:
+  checklist:
+    - Blah Blah
+  checks:
+    - echo 42
+
 deploy:
+  variables:
+    -
+      name: REBUILD
+      title: Force artifacts rebuild
+      default: '0'
   override:
     - echo 1
     - sleep 10
