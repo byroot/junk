@@ -12,6 +12,7 @@ deploy:
       default: '0'
   override:
     - echo 1
+    - env
     - sleep 10
 
 rollback:
