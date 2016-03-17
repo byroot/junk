@@ -10,11 +10,15 @@ deploy:
       name: REBUILD
       title: Force artifacts rebuild
       default: '0'
+  pre:
+    - echo pre
   override:
     - echo 1
     - env
     - sleep 10
-
+  post:
+    - echo post
+ 
 rollback:
   override:
     - echo done
