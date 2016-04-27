@@ -7,7 +7,7 @@ review:
 deploy:
   override:
     - bin/slow
-    - bin/timeout: {timeout: 10}
+    - bin/timeout: {timeout: 5}
 
 rollback:
   override:

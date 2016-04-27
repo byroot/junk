@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "will sleep for 20 seconds"
+echo "will sleep for 20 seconds\n"
 sleep 20
 echo done
