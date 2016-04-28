@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo "will sleep forever\n"
 
+trap "{ echo 'got killed, exiting' ; exit 255; }" SIGINT SIGTERM
+
+echo "will sleep forever\n"
 while true; do 
   sleep 20
 done
