@@ -1,5 +1,8 @@
 #!/bin/bash
 
-echo "will sleep for 20 seconds\n"
-sleep 20
+echo "will sleep forever\n"
+
+while true; do 
+  sleep 20
+done
 echo done
