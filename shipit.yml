@@ -3,6 +3,8 @@ review:
     - Blah Blah
   checks:
     - echo 42
+    - sleep 2
+    - /usr/bin/false
 
 deploy:
   override:
