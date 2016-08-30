@@ -8,7 +8,7 @@ review:
 
 deploy:
   override:
-    - echo "PATH: ${PATH}"
+    - 'echo "PATH: ${PATH}"'
     - bin/slow
     - bin/timeout: {timeout: 5}
 
