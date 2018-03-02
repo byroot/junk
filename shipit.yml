@@ -1,3 +1,7 @@
+ci:
+  blocking:
+    - soc/compliant
+
 deploy:
   override:
     - echo done
