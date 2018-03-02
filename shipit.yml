@@ -1,17 +1,6 @@
-review:
-  checklist:
-    - Blah Blah
-  checks:
-    - echo 42
-    - sleep 2
-    - /usr/bin/false
-
 deploy:
   override:
-    - 'echo "PATH: ${PATH}"'
-    - ejson d foo.ejson
-    - bin/slow
-    - bin/timeout: {timeout: 5}
+    - echo done
 
 rollback:
   override:
