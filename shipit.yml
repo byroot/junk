@@ -4,6 +4,8 @@ ci:
 
 deploy:
   override:
+    - echo start
+    - script/timeout
     - echo done
 
 rollback:
