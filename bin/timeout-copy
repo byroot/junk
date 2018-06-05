@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+trap "{ echo 'got killed, exiting' ; exit 255; }" SIGINT SIGTERM
+
+echo "will sleep forever\n"
+while true; do 
+  sleep 20
+done
+echo done
